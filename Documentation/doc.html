@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width = device-width, initial-scale=1.0, user-scalable=yes"
+        />
+    
+        <link
+          rel="stylesheet"
+          href="https://w3c.github.io/scholarly-html/css/scholarly.min.css"
+        />
+        <script src="https://w3c.github.io/scholarly-html/js/scholarly.min.js"></script>
+        <title>AiCo - Scholarly Documentation</title>
+      </head>
+<body>
+    <header>
+        <div class="banner">
+          <img
+            style="width: 100%"
+            src="https://w3c.github.io/scholarly-html/scholarly-html.svg"
+            width="227"
+            height="50"
+            alt="Scholarly HTML logo"
+          />
+        </div>
+        <h1><project>Airsoft Companion</project> Raport - Scholary HTML</h1>
+    </header>
+
+    <div role="contentinfo">
+        <dl>
+          <dt>Authors</dt>
+            <ul>
+                <li>Cochior Daniel</li>
+                <li>Cristescu Cristian</li>
+                <li>Ionascu Alexandrin</li>
+                <li>Munteanu Lucian-Vasile</li>
+            </ul>
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2>Abstract</h2>
+        <p>
+          Acest document cuprinde aspectele tehnice ale interactiunii
+          cu utilizatorul, al proiectului Airsoft Companion pentru disciplina 
+          <a href="http://pxdotpt.com/hci2024">Human Computer Interaction</a> predata de Colab. drd. Grigoriu Alecsandru,
+          la Facultatea de Informatica, Universitatea Alexandru Ioan Cuza din Iasi, in semestrul 2 al anului 
+          universitar 2023-2024.
+        </p>
+    </section>
+
+    <section id="introduction" role="doc-introduction">
+        <h2>Introducere</h2>
+        <section id="purpose">
+          <h3>Scop</h3>
+          <p>
+            Scopul acestui proiect este acela de a analiza o suita de produse digitale dedicata 
+            grupurilor de jucatori de airsoft care doresc sa-si optimizeze experienta de joc. 
+            Aceste produse digitale pune la dispozitia utilizatorilor posibilitatea de a juca
+            diferite meciuri de airsoft in functie de modul de joc ales: Deathmatch, Capture the Flag,
+            Speedsoft, 1:1, etc. Interfata cu utilizatorul ofera suport multilingvistic, posibilitatea 
+            de a configura echipele de joc, durata si scorul meciului, precum si alte preferinte. In plus aplicatia
+            se sincronizeaza cu arma de airsoft a utilizatorului printr-o conexiune bluetooth, pentru a oferi informatii
+            in timp real despre starea armei, munitiei, si a jucatorului. De asemenea, sistemul se sincronizeaza 
+            cu o aplicatie mobila si cu o pereche de ochelari de realitate augmentata pentru a oferi informatii contextuale 
+            pentru fiecare jucator in timpul unui meci. 
+           
+          </p>
+        </section>
+  
+        <section id="intended-audience">
+          <h3>Public tinta</h3>
+          <p>
+            Aplicatia este destinata jucatorilor de airsoft care doresc sa-si optimizeze experienta de joc,
+            oferindu-le posibilitatea de a juca diferite moduri de joc, de a-si configura echipele si de a 
+            monitoriza starea armei si a munitiei in timp real. De asemenea, aplicatia este destinata si
+            organizatorilor de meciuri de airsoft, care doresc sa-si optimizeze procesul de organizare a meciurilor.
+            Totodata, suita de produse digitale este destinata si jucatorilor incepatori, care doresc sa invete 
+            intr-un mod inedit si interactiv regulile de joc si sa-si imbunatateasca abilitatile de joc prin intermediul 
+            realitatii augmentate.
+          </p>
+        </section>
+    </section>
+    <section id = "motivatie-si-obiective">
+      <h2>Motivatie si obiective</h2>
+      <section id = "motivatie">
+        <h3>Motivatie</h3>
+        <p>
+          Airsoft Companion isi propune sa  ofere 
+          o platforma digitala cuprinzatoare care sa imbunatateasca semnificativ 
+          experienta airsoftului pentru jucatori de toate nivelurile. Prin combinarea unei 
+          aplicatii mobile intuitive, a integrarii Bluetooth cu replicile de arme si a 
+          functiilor de realitate augmentata, AiCo va revolutiona modul in care jucatorii de 
+          airsoft organizeaza meciuri, monitorizeaza performanta armelor si isi optimizeaza 
+          strategiile de joc.
+        </p>
+        <p>
+          Acest proiect este motivat de dorinta de a crea o solutie inovatoare care 
+          sa depaseasca limitarile actuale ale experientei airsoftului. 
+          AiCo are potentialul de a transforma modul in care se joaca airsoftul, 
+          facandu-l mai accesibil, mai organizat si mai captivant pentru o gama mai 
+          larga de jucatori.
+        </p>
+      </section>
+      <section id = "obiective">
+        <h3>Obiective</h3>
+        <p>
+          Obiectivele noastre pentru dezvoltarea aceastei suite de produse digitale sunt urmatoarele:
+          <ul>
+            <li>interfata cu utilizatorul intuitiva si usor de folosit</li>
+            <li>sa ofere posibilitatea de a juca diferite moduri de joc</li>
+            <li>sistem de configurare a echipelor de joc</li>
+            <li>monitorizarea starii armei si a munitiei in timp real</li>
+            <li>organizarea meciurilor de airsoft</li>
+            <li>invatarea regulilor de joc pentru jucatorii incepatori</li>
+          </ul>
+        </p>
+      </section>
+    </section>
+
+    <section id = "research-tactics">
+      <h2>Tactici de research</h2>
+        <section id = "analiza-competitorilor">
+          <h3>Analiza competitorilor</h3>
+          <p>
+            Pentru a intelege mai bine nevoile si preferintele jucatorilor de airsoft, 
+            am analizat atent produsele digitale existente pe piata. Am studiat aplicatii 
+            mobile, platforme web si alte solutii software care ofera functionalitati similare 
+            cu cele pe care le propune AiCo. Am identificat punctele forte si punctele slabe ale 
+            acestor produse, precum si oportunitatile de imbunatatire pe care le ofera AiCo.
+          </p>
+        </section>
+        <section id = "literature-research">
+          <h3>Literature review</h3>
+            <p>
+              Am efectuat o cercetare amanuntita a literaturii de specialitate din doemniul airsoftului,
+              pentru a intelege mai bine regulile de joc, strategiile de joc, echipamentul necesar,
+              precum si alte aspecte relevante. Am studiat documente oficiale ale diferitelor federatii sportive
+              de airsoft, manuale de instruire pentru jucatori, si alte surse de informare. Aceasta cercetare 
+              ne-a ajutat sa dezvoltam o solutie care sa raspunda nevoilor si asteptarilor jucatorilor de airsoft.
+            </p>
+        </section>
+    </section>
+
+    <section id = "sketches">
+      <h2>Sketches</h2>
+      <p>
+        În UI/UX, schitele sunt desene de fidelitate redusa ce reprezinta elemente ale unei interfete de utilizator. 
+        Ele sunt create rapid pentru a explora idei de design, layout-uri si fluxuri de navigare, fara a se preocupa de detaliile vizuale fine.
+      </p>
+      <p>
+        Elemente importante ale unei schite UI/UX:
+        <ul>
+          <li>Liniile simple sunt folosite pentru a reprezenta formele de baza ale elementelor de interfata, cum ar fi butoane, meniuri, campuri de introducere a datelor, etc.</li>
+          <li>Figuri de baza precum dreptunghiuri, cercuri si elipse sunt utilizate pentru a reprezenta continut, imagini sau sectiuni de pe ecran.</li>
+          <li>Pseudo-text: Linii ondulate sau blocuri sunt folosite pentru a indica textul fara a scrie cuvinte reale.</li>
+          <li>Scurte explicatii scrise de mana pot adauga context pentru clarifierea scopului elementelor sau pentru a indica actiuni.</li>
+        </ul>
+      </p>
+      <p>
+        In cadrul proiectului AiCo, am realizat o serie de schite pentru interfata cu utilizatorul, 
+        pentru a ilustra modul in care aplicatia va arata si va functiona. Aceste schite au fost realizate 
+        in urma research-ului nostru si reflecta nevoile si preferintele jucatorilor de airsoft. Aceste 
+        schite pot fi gasite <a href="https://github.com/Lucian292/Airsoft-Companion/tree/main/Sketches">aici</a>.
+      </p>
+    </section>
+
+    <section id = "storyboards">
+      <h2>Storyboards</h2>
+      <p>
+        În UI/UX, storyboard-urile sunt secvente vizuale care ilustreaza modul in care un utilizator interactioneaza cu un produs 
+        digital (aplicatie, site web etc.). Aceasta implica schitarea unor ecrane sau elemente cheie ale interfetei si descrierea 
+        actiunilor pe care un utilizator le-ar realiza pentru a-si indeplini obiectivele in cadrul produsului respectiv.
+      </p>
+      <p>
+        Elemente importante ale unui storyboard UI/UX:
+         <ul>
+          <li>Fiecare cadru reprezinta un ecran sau un punct de interactiune important in cadrul interfetei.</li>
+          <li>Schite simplificate ale elementelor de interfata (butoane, meniuri, campuri de introducere a datelor, etc.).</li>
+          <li>Descrieri ale actiunilor pe care utilizatorul le ia in fiecare punct (ex. "utilizatorul da click pe buton", "utilizatorul introduce text intr-un camp").</li>
+         </ul>
+      </p>
+      <p>
+        Pentru a ilustra modul in care aplicatia AiCo va fi utilizata in practica, am realizat o serie de 
+        storyboards care prezinta diferite scenarii de utilizare. Aceste storyboards au fost realizate in 
+        urma research-ului nostru si reflecta nevoile si preferintele jucatorilor de airsoft. Totodata, aceste 
+        storyboards reflecta scenarii de utilizare realiste si relevante pentru aplicatia AiCo. Aceste 
+        storyboards pot fi gasite <a href="https://github.com/Lucian292/Airsoft-Companion/tree/main/Storyboards">aici</a>
+    </section>
+
+    <section id = "userflow">
+      <h2>User flow</h2>
+      <p>
+         Un user flow (fluxul utilizatorului) este o reprezentare vizuala a pasilor pe care un utilizator ii va parcurge
+         pentru a finaliza o sarcina specifica intr-un produs digital. Este o modalitate de a descrie calatoria utilizatorului 
+         prin interfata produsului, de la punctul de pornire pana la finalizarea actiunii dorite.
+      </p>
+      <p>
+        User flow-urile sunt esentiale pentru designul UX (User Experience) din mai multe motive:
+        <ul>
+          <li>Claritatea ajuta la clarificarea si structurarea experientei utilizatorului, asigurand o calatorie logica si intuitiva.</li>
+          <li>Permit identificarea potentialelor probleme sau blocaje din calea utilizatorului, oferind oportunitati de optimizare a designului.</li>
+          <li>Ajuta la crearea unei experiente de utilizator mai placuta, mai eficienta si mai satisfacatoare, ducand la o crestere
+             a satisfactiei utilizatorilor si a ratei de conversie.</li>
+        </ul>
+      </p>
+      <p>
+        Pentru a ilustra modul in care utilizatorii vor interactiona cu aplicatia AiCo, am realizat un user flow 
+        care prezinta toate etapele procesului de utilizare a aplicatiei. Am creat un user flow detaliat pentru fiecare 
+        tip de aplicatie, si pentru platforma mobile si pentru platforma AR. Acest user flow reflecta modul in care
+        utilizatorii vor naviga prin aplicatie, vor accesa diferite functii si vor interactiona cu diferite elemente 
+        ale interfetei. User flow-ul poate fi gasit <a href="https://github.com/Lucian292/Airsoft-Companion/tree/main/User%20Flows">aici</a>.
+      </p>
+      <figure>
+        <img src="/User Flows/Phone User Flow.png" alt="Mobile App user flow" width="800">
+        <figcaption style="text-align: center;">
+            Mobile App User Flow
+        </figcaption>
+      </figure>
+      <br>
+      <br>
+      <figure>
+        <img src="/User Flows/AR User Flow.png" alt="AR App user flow" width="800">
+        <figcaption style="text-align: center;">
+            AR App User Flow
+      </figure>
+    </section>
+
+    <section id = "design-patterns">
+      <h2>Design patterns</h2>
+      <p>
+        În UI/UX, un design pattern reprezinta o solutie reutilizabila la o problema de design comuna. 
+        Design pattern-urile ofera sfaturi si principii dovedite pentru a crea interfete eficiente, intuitive si estetice. 
+        Ele pot fi aplicate la o varietate de elemente de interfata, cum ar fi formulare, meniuri, bara navigare si cautare.
+      </p>
+
+      <p>
+        Utilizarea design pattern-urilor in UI/UX prezinta numeroase beneficii:
+        <ul>
+          <li>Modelele de design ofera solutii pre-gandite si testate, economisind timp si resurse in procesul de design.</li>
+          <li>Utilizarea modelelor de design promoveaza coerenta in interfata, oferind o experienta familiara si usor de utilizat pentru utilizatori.</li>
+          <li>Modelele de design bazate pe principii dovedite ajuta la crearea de interfete mai intuitive si mai usor de utilizat.</li>
+          <li>Unele modele de design pot oferi principii estetice pentru a crea interfete atractive si placute din punct de vedere vizual.</li>
+
+        </ul>
+      </p>
+
+      <p>
+        In cadrul proiectului AiCo, am folosit o serie de design patterns pentru a imbunatati experienta de utilizare 
+        a aplicatiei. Aceste design patterns sunt solutii recunoscute si validate pentru probleme comune de design, 
+        care ne-au ajutat sa creem o interfata cu utilizatorul intuitiva si usor de folosit. 
+      </p>
+
+      <p>
+        Pentru aplicatia mobila am folosit urmatoarele design patterns:
+        <ul>
+          <li>Dropdown menu</li>
+          <li>Timer</li>
+          <li>Form</li>
+          <li>Icons and buttons</li>
+        </ul>
+      </p>
+
+      <p>
+        Pentru aplicatia AR am folosit urmatoarele design patterns:
+        <ul>
+          <li>Times</li>
+          <li>Minimap</li>
+          <li>Voice chat indicator</li>
+          <li>Video player</li>
+          <li>Statistic diagram</li>
+          <li>Leaderboard</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id = "conclusion">
+      <h2>Concluzie</h2>
+        <p>
+          In concluzie, proiectul AiCo reprezinta o solutie inovatoare si complexa pentru jucatorii de airsoft, 
+          care isi propune sa imbunatateasca experienta de joc si sa optimizeze procesul de organizare a meciurilor. 
+          Prin combinarea unei aplicatii mobile intuitive, a integrarii Bluetooth cu replicile de arme si a functiilor 
+          de realitate augmentata, AiCo va revolutiona modul in care jucatorii de airsoft se pregatesc, se organizeaza 
+          si se distreaza in timpul meciurilor. Cu ajutorul schitelor, storyboard-urilor, user flow-urilor si design patterns-urilor, 
+          am reusit sa dezvoltam o interfata cu utilizatorul care sa raspunda nevoilor si asteptarilor jucatorilor de airsoft. 
+          Speram ca aceasta solutie sa ofere o experienta de joc captivanta si memorabila pentru toti utilizatorii sai.
+        </p>
+    </section>
+</body>
+</html>
