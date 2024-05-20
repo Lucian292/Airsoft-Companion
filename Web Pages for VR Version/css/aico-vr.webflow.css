@@ -1,0 +1,287 @@
+:root {
+  --black: black;
+  --white: white;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.background-video {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 960px;
+  display: flex;
+}
+
+.countdown-wrapper {
+  flex-flow: row;
+  justify-content: center;
+  display: flex;
+}
+
+.map-and-battery {
+  grid-column-gap: 19px;
+  grid-row-gap: 19px;
+  flex-flow: column;
+  align-items: center;
+  display: flex;
+}
+
+.map {
+  opacity: 1;
+  background-image: url('../images/minimap-removebg-preview.png');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.battery {
+  opacity: 1;
+  background-image: url('../images/battery.png');
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  border-radius: 20px;
+  flex-flow: row;
+  width: 250px;
+  height: 80px;
+  display: flex;
+}
+
+.voice-chat {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  align-items: center;
+  display: flex;
+}
+
+.team {
+  color: #000;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.first-row {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: row;
+  flex: 0 auto;
+  order: 0;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+}
+
+.second-row {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.ammo {
+  background-color: rgba(255, 255, 255, .5);
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 0 0;
+  background-size: auto;
+  border: 3px solid #000;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.elements {
+  flex-flow: column;
+  justify-content: space-between;
+  width: 95%;
+  height: 90%;
+  padding-top: 0;
+  display: flex;
+}
+
+.for-backgound {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: var(--black);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: var(--black);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: var(--black);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: var(--black);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 20px;
+}
+
+.text-block {
+  color: #ffae00;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.background-for-team {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #000;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.list-item {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.text-block-2 {
+  color: red;
+}
+
+.text-block-3 {
+  font-size: 30px;
+}
+
+.text-block-4 {
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+}
+
+.image-2 {
+  width: 100%;
+  height: 930px;
+}
+
+.section {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-image: url('../images/terrain-dairsoft-fait-maisonjpg.jpg');
+  background-position: 50%;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  height: 960px;
+  display: flex;
+}
+
+.collumn-1 {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  margin-left: 60px;
+  padding-left: 0;
+  display: flex;
+}
+
+.for-table-background {
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #000;
+  border-radius: 20px;
+  height: 50%;
+}
+
+.grid {
+  grid-row-gap: 15px;
+  color: #000;
+  grid-template: "."
+                 "."
+                 "."
+                 "."
+                 "."
+                 / 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.for-stats--background {
+  grid-column-gap: 68px;
+  grid-row-gap: 68px;
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #000;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+
+.collumn-2 {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  margin-right: 60px;
+  display: flex;
+}
+
+.header-background {
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #000;
+  border-radius: 20px;
+}
+
+.video {
+  border-radius: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.heading {
+  color: #6f00a7;
+  text-align: center;
+  font-size: 70px;
+  line-height: 130%;
+}
+
+.text-span {
+  color: #000;
+}
+
+.dammage-done {
+  text-align: center;
+}
+
+.heading-2 {
+  color: #000;
+  font-size: 35px;
+}
+
+#w-node-b75274d7-fea2-2316-f11b-8f984c46d68c-bfe776e6, #w-node-_1f63e459-a739-e635-b036-674cac013024-bfe776e6, #w-node-af298eef-117d-1694-6387-dcccc7d54594-bfe776e6, #w-node-_54e7fca5-4375-3c5a-4a7f-a7c62a4b3022-bfe776e6, #w-node-_5f01fc1f-6e27-9025-20a9-2dd42c2c85d0-bfe776e6, #w-node-_4e4ba59a-483d-d82d-8a45-796b4123482d-bfe776e6, #w-node-_13bc856f-f006-356a-4c5f-85cbd5bdbe7e-bfe776e6, #w-node-_93bcd482-ea49-8228-aad1-60dd1f59302c-bfe776e6, #w-node-_012d3a3c-b751-6c9f-cf58-80e75c5246a4-bfe776e6, #w-node-a74bc020-9a2a-29cb-a19e-3fce06a0c517-bfe776e6, #w-node-_33c6f1d0-bc71-19a7-aa35-200cfe819886-bfe776e6, #w-node-_95bb13be-2b40-d78b-fd25-47c8692369e2-bfe776e6, #w-node-eaa07693-e3ca-0e6a-79d7-b91095fb2987-bfe776e6, #w-node-_34601cb6-2c51-8bf9-cc4a-05392546bf15-bfe776e6, #w-node-dd86b8be-caa5-aac5-c345-398e81cac7f6-bfe776e6, #w-node-aab0c5d0-0285-941f-8f24-b3d7dcdcb1de-bfe776e6, #w-node-_959e5517-3eaa-8ea2-3226-162e8f5afc08-bfe776e6, #w-node-_9b6343a9-afc5-72d8-58bb-39ed38aa44ac-bfe776e6, #w-node-_5e02a74e-8839-ed27-2d09-3ad2c295ba10-bfe776e6, #w-node-f38c8b98-431a-ccc1-6eb0-bad2bf6fd134-bfe776e6, #w-node-_486b3387-4754-a984-0643-fffa0738e678-bfe776e6, #w-node-_09a9683e-3807-0040-99be-8fe6fc6d537c-bfe776e6, #w-node-_1f4f1f24-1a4f-68c8-3b78-2ea6927fec17-bfe776e6, #w-node-_3b1be4c3-134e-5c7a-fec4-3190c56f9a6f-bfe776e6, #w-node-_0b3b3d29-6fab-93b3-ff34-992646f3e626-bfe776e6 {
+  align-self: center;
+  justify-self: center;
+}
