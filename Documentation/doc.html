@@ -13,6 +13,17 @@
         />
         <script src="https://w3c.github.io/scholarly-html/js/scholarly.min.js"></script>
         <title>AiCo - Scholarly Documentation</title>
+
+        <style>
+          .container {
+              display: flex;
+          }
+          .container img {
+              max-width: 100%;
+              height: auto;
+              width: 400px;
+          }
+      </style>
       </head>
 <body>
     <header>
@@ -280,6 +291,149 @@
         </ul>
       </p>
     </section>
+
+    <section id = "interaction-design-patterns">
+      <h2>Interaction design patterns</h2>
+      <p>
+        Interaction design patterns sunt solutii recunoscute si validate pentru probleme comune de interactiune 
+        cu utilizatorul. Acestea ofera principii si directii pentru a crea experiente de utilizare eficiente, intuitive 
+        si placute. Interaction design patterns pot fi aplicate la o varietate de elemente de interfata, cum ar fi
+        butoane, meniuri, campuri de introducere a datelor, etc.
+      </p>
+
+      <p>
+        Utilizarea interaction design patterns in UI/UX prezinta numeroase beneficii:
+        <ul>
+          <li>Modelele de design ofera solutii pre-gandite si testate, economisind timp si resurse in procesul de design.</li>
+          <li>Utilizarea modelelor de design promoveaza coerenta in interfata, oferind o experienta familiara si usor de utilizat pentru utilizatori.</li>
+          <li>Modelele de design bazate pe principii dovedite ajuta la crearea de interfete mai intuitive si mai usor de utilizat.</li>
+          <li>Unele modele de design pot oferi principii estetice pentru a crea interfete atractive si placute din punct de vedere vizual.</li>
+
+        </ul>
+      </p>
+
+      <p>
+        Pentru a imbunatati experienta de utilizare a aplicatiei AiCo, am implementat urmatoarele interaction design patterns:
+        <ul>
+          <li>Drag and Drop: Permite utilizatorilor sa traga si sa lase elemente pentru a realiza anumite actiuni, cum ar fi 
+            rearanjarea elementelor pe ecran sau transferul de informatii.</li>
+          <li>Accordion: Permite utilizatorilor sa extinda sau sa restranga sectiuni de continut pentru a economisi 
+            spatiu pe ecran si a oferi o organizare mai clara a informatiilor.</li>
+          <li>Modal: Afiseaza un dialog sau o fereastra temporara peste continutul principal pentru a solicita 
+            actiunea utilizatorului sau pentru a oferi informatii suplimentare.</li>
+          <li>Focus indicators: Am adaugat indicatori de focus vizibili pentru a ajuta utilizatorii sa se orienteze mai usor 
+            in timpul jocul. Spre exmplu, adaugarea unui meniu ce cuprinde numele jucatorilor ramasi din echipa proprie, sau nivelul de incarcare a bateriei armei.</li>
+          <li>Responsive design: Am creat un design responsiv care se adapteaza la diferite dimensiuni de ecran, 
+            pentru a asigura o experienta consistenta si usor de utilizat pe dispozitive mobile si desktop.</li>
+          <li>Clear navigation: Am implementat o navigare clara si intuitiva, cu structura logica si etichete 
+            descriptive, pentru a ajuta utilizatorii sa se orienteze si sa gaseasca rapid informatiile dorite.</li>
+          <li>Readable content: Am utilizat fonturi si dimensiuni de text usor de citit, cu un contrast
+             adecvat fata de fundal, pentru a facilita citirea si intelegerea continutului.</li>
+          <li>Accessible media controls: Am inclus controale accesibile pentru continutul multimedia, 
+            cum ar fi butoane de redare/pauza si de ajustare a volumului, pentru a permite utilizatorilor 
+            cu deficiente de vedere sau auz sa interactioneze cu acesta.</li>
+        </ul>
+      </p>
+
+      <figure id = "clear-nav" style="text-align: center;">
+        <img src="./img/menu.png" alt="Clear Navigation" >
+        <figcaption style="text-align: center;">
+            Clear Navigation
+        </figcaption>
+      </figure>
+
+      
+      <div class="container">
+        <figure id = "left">
+          <img src = "./img/arial.png" alt = "Arial Font">
+          <figcaption style="text-align: center;">
+            Arial Font
+        </figure>
+
+        <figure id = "right">
+          <img src = "./img/gun.png" alt = "Gun Icon">
+          <figcaption style="text-align: center;">
+            Gunplay Font
+        </figure>
+       
+      </div>
+
+      <figure class = "stats" style="text-align: center;">
+        <img src = "./img/in_game_stats.png" alt = "Stats Diagram" height="400px" width="1000px">
+        <figcaption style="text-align: center;">
+            Focus Indicators
+        </figcaption>
+      </figure>
+
+      <figure class = "colors">
+        <img src = "./img/colors.png" alt = "Colors" height="600px" width="600px">
+        <figcaption style="text-align: center;">
+            Color Palette
+        </figcaption>
+      </figure>
+
+      <p>
+        Aceste interaction design patterns au fost implementate in aplicatia AiCo pentru a oferi o experienta de utilizare 
+        mai eficienta, mai intuitiva si mai placuta pentru utilizatori. Prin integrarea acestor patterns in interfata cu 
+        utilizatorul, am reusit sa creem o aplicatie care sa raspunda nevoilor si asteptarilor jucatorilor de airsoft.
+      </p>
+
+
+    </section>
+
+    <section id = "accessibility">
+      <h2>Accesibilitate</h2>
+      <p>
+        Accesibilitatea este un aspect crucial al designului UI/UX, care se refera la capacitatea unui produs digital de a fi 
+        utilizat de catre o gama larga de utilizatori, inclusiv persoane cu dizabilitati. Un design accesibil este un design 
+        care este usor de utilizat, usor de navigat si usor de inteles pentru toata lumea, indiferent de abilitati sau 
+        nevoi speciale.
+      </p>
+
+      <p>
+        In cadrul proiectului AiCo, am acordat o atentie deosebita accesibilitatii, pentru a ne asigura ca aplicatia noastra 
+        este usor de utilizat si de inteles pentru toti utilizatorii. Am implementat urmatoarele principii de accesibilitate 
+        in designul aplicatiei:
+        <ul>
+          <li>Contrast: Am folosit culori si contrasturi puternice pentru a face textul si elementele de interfata usor de citit si de diferentiat.</li>  
+          <li>Font size: Am folosit dimensiuni de font mari si clare pentru a facilita citirea si intelegerea continutului.</li>
+          <li>Accessible error messages: Am furnizat mesaje de eroare clare si explicite pentru utilizatorii cu deficiente de vedere sau cu dificultati de citire, pentru a le indica problemele si a le oferi solutii.</li>
+          <li>Responsive images: Am utilizat imagini responsive pentru a se adapta la diferite dimensiuni de ecran, asigurand o experienta vizuala optima indiferent de dispozitivul utilizat.</li>
+          <li>Lazy loading: Am implementat incarcarea lenesa a imaginilor pentru a optimiza timpul de incarcare al paginii si a imbunatati performanta aplicatiei.</li>
+          <li>Progressive enhancement: Am aplicat principiul de imbunatatire progresiva, asigurand ca aplicatia functioneaza corect si ofera o experienta de baza solida chiar si pe dispozitive mai vechi sau cu conexiuni mai slabe la internet.</li>
+          <li>Accessible AR markers: Am implementat marcatori AR accesibili, care pot fi detectati si interpretati de catre dispozitivele asistive, pentru a oferi informatii suplimentare sau indicatii utilizatorilor.</li>
+          <li>Audio feedback: Am inclus feedback audio pentru a comunica informatii importante sau indicatii utilizatorilor.</li>
+          <li>Text-to-speech: Am adaugat functionalitate de conversie a textului in vorbire, pentru a permite utilizatorilor, ce sunt in timpul jocului, sa poata auzi mesajele
+             afisate in interfata AR pentru a nu pierde concentrarea in timpul jocului.</li>
+        </ul>
+      </section>
+
+      <section id = "design-decisions">
+        <h2>Decizii de design</h2>
+
+        <p>
+          In cadrul proiectului AiCo, am luat o serie de decizii de design pentru a crea o interfata cu utilizatorul 
+          care sa raspunda nevoilor si asteptarilor jucatorilor de airsoft. Aceste decizii de design au fost luate in 
+          urma research-ului nostru si reflecta cele mai bune practici din domeniul UI/UX. Iata cateva dintre deciziile 
+          de design cheie pe care le-am luat:
+          
+          <ul>
+            <li>Minimalist design: Am adoptat un design minimalist pentru a oferi o experienta de utilizare simpla si intuitiva.</li>
+            <li>Flat design: Am folosit un design plat pentru a oferi o interfata curata si moderna, fara elemente inutile sau distractive.</li>
+            <li>Color palette: Am ales o paleta de culori ce se potrivesc mediului de joc si contrastante pentru a face interfata mai atractiva si mai usor de utilizat.</li>
+            <li>Iconography: Am folosit o iconografie clara si intuitiva pentru a facilita navigarea si intelegerea continutului.</li>
+            <li>Typography: Am utilizat fonturi clare si usor de citit pentru a facilita citirea si intelegerea textului.</li>
+            <li>Consistent navigation: Am creat o navigare coerenta si intuitiva, cu structura logica si etichete descriptive, pentru a ajuta utilizatorii sa se orienteze si sa gaseasca rapid informatiile dorite.</li>
+            <li>Responsive design: Am creat un design responsiv care se adapteaza la diferite dimensiuni de ecran, pentru a asigura o experienta consistenta si usor de utilizat pe dispozitive mobile si desktop.</li>
+            <li>Feedback: Am inclus feedback vizual si audio pentru a comunica informatii importante si pentru a confirma actiunile utilizatorilor.</li>
+            <li>Accessibility: Am acordat o atentie deosebita accesibilitatii, asigurand ca aplicatia noastra este usor de utilizat si de inteles pentru toti utilizatorii.</li>
+          </ul>
+          </p>
+
+
+        </section>
+
+
 
     <section id = "conclusion">
       <h2>Concluzie</h2>
